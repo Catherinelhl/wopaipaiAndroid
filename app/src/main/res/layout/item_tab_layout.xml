@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tab_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="CNYC"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textColor="@color/grey_999999"
+            android:textSize="@dimen/text_size_10" />
+
+        <View
+            android:id="@+id/tab_item_indicator"
+            android:layout_width="@dimen/d16"
+            android:layout_height="@dimen/d2"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/button_color"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/d20"
+        android:layout_height="@dimen/d20"
+        android:layout_alignTop="@+id/ll"
+        android:layout_marginRight="@dimen/d5"
+        android:layout_toLeftOf="@+id/ll"
+        android:alpha="0.5"
+        android:background="@color/transparent"
+        android:minWidth="@dimen/d20"
+        android:minHeight="@dimen/d20"
+        android:visibility="gone" />
+
+</RelativeLayout>

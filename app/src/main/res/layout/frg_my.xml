@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#1ad8d8d8" />
+
+    <LinearLayout
+        android:id="@+id/ly_user_msg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d88"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="@dimen/d58"
+            android:layout_height="@dimen/d58"
+            android:layout_margin="@dimen/d15">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/set_photo" />
+
+            <ImageView
+                android:id="@+id/iv_vip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_vip"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#222222"
+                tools:text="张三" />
+
+            <TextView
+                android:id="@+id/tv_level"
+                android:layout_width="wrap_content"
+                android:layout_height="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/tv_name"
+                android:background="@drawable/vip_yellow_bg"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                tools:text="VIP1" />
+
+            <TextView
+                android:id="@+id/tv_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                tools:text="123456789" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/d12"
+            android:background="@mipmap/set_common_next" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/d10"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ly_my_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d16"
+                    android:layout_marginTop="@dimen/d14"
+                    android:layout_marginBottom="@dimen/d8"
+                    android:background="@mipmap/wallet" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/d20"
+                    android:layout_marginTop="@dimen/d16"
+                    android:layout_marginBottom="@dimen/d14"
+                    android:text="@string/title_my_wallet"
+                    android:textColor="#222222"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/d12"
+                    android:background="@mipmap/set_common_next" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/d60"
+                android:background="#1ad8d8d8" />
+
+            <LinearLayout
+                android:id="@+id/ly_my_tg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d16"
+                    android:layout_marginTop="@dimen/d14"
+                    android:layout_marginBottom="@dimen/d8"
+                    android:background="@mipmap/set_icon2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/d20"
+                    android:layout_marginTop="@dimen/d16"
+                    android:layout_marginBottom="@dimen/d14"
+                    android:text="@string/intelligent_hosting"
+                    android:textColor="#222222"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/d12"
+                    android:background="@mipmap/set_common_next" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/d60"
+                android:background="#1ad8d8d8" />
+
+            <LinearLayout
+                android:id="@+id/ly_my_invite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d16"
+                    android:layout_marginTop="@dimen/d14"
+                    android:layout_marginBottom="@dimen/d8"
+                    android:background="@mipmap/set_icon3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/d20"
+                    android:layout_marginTop="@dimen/d16"
+                    android:layout_marginBottom="@dimen/d14"
+                    android:text="@string/title_sharing_registration"
+                    android:textColor="#222222"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/d12"
+                    android:background="@mipmap/set_common_next" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/d60"
+                android:background="#1ad8d8d8" />
+
+            <LinearLayout
+                android:id="@+id/ly_my_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d16"
+                    android:layout_marginTop="@dimen/d14"
+                    android:layout_marginBottom="@dimen/d8"
+                    android:background="@mipmap/set_icon4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/d20"
+                    android:layout_marginTop="@dimen/d16"
+                    android:layout_marginBottom="@dimen/d14"
+                    android:text="@string/title_my_order"
+                    android:textColor="#222222"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/d12"
+                    android:background="@mipmap/set_common_next" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/d60"
+                android:background="#1ad8d8d8" />
+
+            <LinearLayout
+                android:id="@+id/ly_my_communte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d16"
+                    android:layout_marginTop="@dimen/d14"
+                    android:layout_marginBottom="@dimen/d8"
+                    android:background="@mipmap/set_icon5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/d20"
+                    android:layout_marginTop="@dimen/d16"
+                    android:layout_marginBottom="@dimen/d14"
+                    android:text="@string/title_my_community"
+                    android:textColor="#222222"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/d12"
+                    android:background="@mipmap/set_common_next" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/d60"
+                android:background="#1ad8d8d8" />
+
+            <LinearLayout
+                android:id="@+id/ly_my_comm_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d16"
+                    android:layout_marginTop="@dimen/d14"
+                    android:layout_marginBottom="@dimen/d8"
+                    android:background="@mipmap/set_icon6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/d20"
+                    android:layout_marginTop="@dimen/d16"
+                    android:layout_marginBottom="@dimen/d14"
+                    android:text="@string/title_community_excuse"
+                    android:textColor="#222222"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/d12"
+                    android:background="@mipmap/set_common_next" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/d60"
+                android:background="#1ad8d8d8" />
+
+            <LinearLayout
+                android:id="@+id/ly_my_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d16"
+                    android:layout_marginTop="@dimen/d14"
+                    android:layout_marginBottom="@dimen/d8"
+                    android:background="@mipmap/set_icon7" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/d20"
+                    android:layout_marginTop="@dimen/d16"
+                    android:layout_marginBottom="@dimen/d14"
+                    android:text="@string/setting_center"
+                    android:textColor="#222222"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/d12"
+                    android:background="@mipmap/set_common_next" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/d60"
+                android:background="#1ad8d8d8" />
+
+            <LinearLayout
+                android:id="@+id/ly_my_conster"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d16"
+                    android:layout_marginTop="@dimen/d14"
+                    android:layout_marginBottom="@dimen/d12"
+                    android:background="@mipmap/set_icon8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/d20"
+                    android:layout_marginTop="@dimen/d16"
+                    android:layout_marginBottom="@dimen/d16"
+                    android:text="@string/contact_customer_service"
+                    android:textColor="#222222"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/d12"
+                    android:background="@mipmap/set_common_next" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/d299"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/d20"
+    android:layout_marginTop="@dimen/d20"
+    android:layout_marginRight="@dimen/d20">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/bold_black_18_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/d16"
+        android:gravity="center"
+        android:text="@string/warning" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="@dimen/d20"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/d16"
+        android:layout_marginRight="@dimen/d16"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/d3"
+        android:textColor="@color/black_1d2124"
+        android:textSize="@dimen/text_size_14" />
+
+    <View
+        android:id="@+id/line"
+        style="@style/line_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:layout_below="@+id/tv_content"
+        android:layout_marginTop="@dimen/d16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d48"
+        android:layout_below="@+id/line"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="@dimen/d0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textAllCaps="false"
+            android:textColor="@color/black50_1d2124"
+            android:textSize="@dimen/text_size_16" />
+
+        <View
+            style="@style/line_style"
+            android:layout_width="@dimen/d1"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="@dimen/d0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="@string/cancel"
+            android:textColor="@color/red_F5515F"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+
+</RelativeLayout>

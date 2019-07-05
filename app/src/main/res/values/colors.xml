@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="button_color">#FAAE00</color>
+    <color name="orange_F79E01">#F79E01</color>
+    <color name="orange_FFCA18">#FFCA18</color>
+    <color name="orange_FAAE00">#FAAE00</color>
+    <color name="orange_FFBC00">#FFBC00</color>
+    <color name="orange05_FFBC00">#0DFFBC00</color>
+    <color name="white">#ffffff</color>
+    <color name="white30">#4Dffffff</color>
+    <color name="red_F5515F">#F5515F</color>
+    <color name="red_FF889A">#FF889A</color>
+    <color name="red10_F5515F">#1aF5515F</color>
+    <color name="grey_c5c5c5">#C5C5C5</color>
+    <color name="theme_grey">#F3F3F3</color>
+    <color name="pink_FFAB87">#FFAB87</color>
+    <color name="pink50_FFAB87">#80FFAB87</color>
+    <color name="grey_f3f3f3">#f3f3f3</color>
+
+    <!--TV white-->
+    <color name="white_f1f1f1">#F1F1F1</color>
+    <color name="white50_f1f1f1">#80F1F1F1</color>
+    <color name="white70_f1f1f1">#b3F1F1F1</color>
+    <color name="white30_f1f1f1">#4DF1F1F1</color>
+    <color name="white20_f1f1f1">#33F1F1F1</color>
+    <color name="white60_FAFAFA">#90FAFAFA</color>
+    <color name="white10_F1F1F1">#1aF1F1F1</color>
+    <color name="grey_E2E2E4">#E2E2E4</color>
+
+    <color name="red">#DA261F</color>
+    <color name="red_ff0000">#ff0000</color>
+    <color name="red70_da261f">#b3DA261F</color>
+    <color name="red_FF3636">#FF3636</color>
+
+
+    <color name="blue">#4F80A1</color>
+    <color name="blue_0576FE">#0576FE</color>
+
+
+    <color name="theme_grey_line">#fffefefe</color>
+    <color name="grey_CCCCCC">#cccccc</color>
+    <color name="grey_F8F8F8">#F8F8F8</color>
+    <color name="grey_999999">#999999</color>
+    <color name="green70_18ac22">#b318AC22</color>
+    <color name="orange_yellow">#F5A623</color>
+    <color name="orange_FC9003">#FC9003</color>
+    <color name="orange_666666">#fffaae00</color>
+    <color name="orange_faae00">#faae00</color>
+
+    <color name="grey_0A082D">#0A082D</color>
+    <color name="grey_F5F5F5">#F5F5F5</color>
+    <color name="black20_AEAEAE">#33AEAEAE</color>
+    <color name="gray_line">#ffEAEAEA</color>
+    <color name="gray20_line">#1ad8d8d8</color>
+    <color name="black_222222">#222222</color>
+    <color name="black30_222222">#4d222222</color>
+
+
+    <!--标题黑-->
+    <color name="black_1d2124">#1D2124</color>
+    <color name="black10_1d2124">#1a1D2124</color>
+    <color name="black20_1d2124">#331D2124</color>
+    <color name="black30_1d2124">#4d1D2124</color>
+    <color name="black50_1d2124">#801D2124</color>
+    <color name="black70_1d2124">#b31D2124</color>
+    <color name="black90_1d2124">#e61D2124</color>
+
+
+    <!--透明度-->
+    <color name="transparent">#00000000</color>
+
+    <!--黑色的透明度-->
+    <color name="black00">#00000000</color>
+    <color name="black05">#0D000000</color>
+    <color name="black10">#1A000000</color>
+    <color name="black15">#26000000</color>
+    <color name="black20">#33000000</color>
+    <color name="black25">#40000000</color>
+    <color name="black30">#4D000000</color>
+    <color name="black35">#59000000</color>
+    <color name="black40">#66000000</color>
+    <color name="black45">#73000000</color>
+    <color name="black50">#80000000</color>
+    <color name="black55">#8C000000</color>
+    <color name="black60">#99000000</color>
+    <color name="black65">#A6000000</color>
+    <color name="black70">#B3000000</color>
+    <color name="black75">#BF000000</color>
+    <color name="black80">#CC000000</color>
+    <color name="black85">#D9000000</color>
+    <color name="black90">#E6000000</color>
+    <color name="black95">#F2000000</color>
+    <color name="black">#ff000000</color>
+    <color name="black_666666">#666666</color>
+
+
+</resources>

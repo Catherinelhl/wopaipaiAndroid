@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_auction_item"
+    android:background="@drawable/bg_white"
+    android:padding="@dimen/d10">
+
+    <ImageView
+        android:id="@+id/iv_auction_commodity_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:background="@color/theme_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d10"
+        android:layout_toRightOf="@+id/iv_auction_commodity_cover"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_auction_commodity_name"
+            style="@style/black_14_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:minHeight="@dimen/d14"
+            android:text="海尔洗衣机海尔洗衣机海尔洗…" />
+
+        <TextView
+            android:id="@+id/tv_auction_commodity_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d3"
+            android:background="@color/red10_F5515F"
+            android:minHeight="@dimen/d14"
+            android:paddingLeft="@dimen/d4"
+            android:paddingTop="@dimen/d1"
+            android:paddingRight="@dimen/d4"
+            android:paddingBottom="@dimen/d1"
+            android:text="竞拍入场 1000 ZBB起"
+            android:textColor="@color/red_F5515F"
+            android:textSize="@dimen/text_size_11" />
+
+        <cn.wopaipai.view.layout.LeftMiddleRightCurrentPriceLayout
+            android:id="@+id/current_price_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_auction_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d3"
+            android:minHeight="@dimen/d10"
+            android:text="距结束 01:23:08"
+            android:textColor="@color/red_F5515F"
+            android:textSize="@dimen/text_size_10" />
+
+        <TextView
+            android:id="@+id/tv_auction_joined_person_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/d12"
+            android:layout_marginTop="@dimen/d1"
+            android:text="参与人数 100"
+            android:textColor="@color/grey_999999"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_auction_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/d12"
+        android:layout_marginBottom="@dimen/d16"
+        android:drawableTop="@mipmap/icon_auction_hammer"
+        android:drawablePadding="@dimen/d2"
+        android:gravity="center"
+        android:minWidth="@dimen/d32"
+        android:minHeight="@dimen/d12"
+        android:text="@string/enter_in"
+        android:textColor="@color/grey_999999"
+        android:textSize="@dimen/text_size_12" />
+</RelativeLayout>

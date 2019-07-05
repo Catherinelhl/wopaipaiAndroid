@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.my.WalletListDetailsActivity">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d16"
+        android:layout_marginTop="@dimen/d15"
+        android:layout_marginRight="@dimen/d15"
+        android:background="@drawable/bg_turn_into">
+
+        <ImageView
+            android:layout_width="@dimen/d82"
+            android:layout_height="@dimen/d57"
+            android:layout_marginLeft="@dimen/d12"
+            android:layout_marginTop="@dimen/d25"
+            android:layout_marginBottom="@dimen/d18"
+            android:src="@mipmap/pic_turn_or_into" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d122"
+            android:layout_marginTop="@dimen/d30"
+            android:text="转入转出"
+            android:textColor="#ff222222"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d122"
+            android:layout_marginTop="@dimen/d57"
+            android:text="+1.0000"
+            android:textColor="#ff222222"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d195"
+            android:layout_marginTop="@dimen/d60"
+            android:text="ZBB"
+            android:textColor="#ff222222"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d15"
+        android:layout_marginTop="@dimen/d15"
+        android:layout_marginRight="@dimen/d15"
+        android:background="@drawable/selector_bg_flowlayout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_turn_into_detils">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d21"
+                android:layout_marginTop="@dimen/d15"
+                android:layout_marginBottom="@dimen/d15"
+                android:text="@string/issuing_party"
+                android:textColor="#ff222222"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d15"
+                android:layout_marginRight="@dimen/d20"
+                android:layout_marginBottom="@dimen/d17"
+                android:text="safsdgfsgsdg"
+                android:textColor="#ff666666"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/d15"
+            android:layout_marginRight="@dimen/d15"
+            android:background="#ffeaeaea" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_turn_into_detils">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d21"
+                android:layout_marginTop="@dimen/d15"
+                android:layout_marginBottom="@dimen/d15"
+                android:text="@string/receiving_party"
+                android:textColor="#ff222222"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d15"
+                android:layout_marginRight="@dimen/d20"
+                android:layout_marginBottom="@dimen/d17"
+                android:text="safsdgfsgsdg"
+                android:textColor="#ff666666"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/d15"
+            android:layout_marginRight="@dimen/d15"
+            android:background="#ffeaeaea" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_turn_into_detils">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d21"
+                android:layout_marginTop="@dimen/d15"
+                android:layout_marginBottom="@dimen/d15"
+                android:text="@string/miner_cost"
+                android:textColor="#ff222222"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d15"
+                android:layout_marginRight="@dimen/d20"
+                android:layout_marginBottom="@dimen/d17"
+                android:text="safsdgfsgsdg"
+                android:textColor="#ff666666"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/d15"
+            android:layout_marginRight="@dimen/d15"
+            android:background="#ffeaeaea" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_turn_into_detils">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d21"
+                android:layout_marginTop="@dimen/d15"
+                android:layout_marginBottom="@dimen/d15"
+                android:text="@string/transaction_number"
+                android:textColor="#ff222222"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d15"
+                android:layout_marginRight="@dimen/d20"
+                android:layout_marginBottom="@dimen/d17"
+                android:text="safsdgfsgsdg"
+                android:textColor="#ff666666"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/d15"
+            android:layout_marginRight="@dimen/d15"
+            android:background="#ffeaeaea" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_turn_into_detils">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d21"
+                android:layout_marginTop="@dimen/d15"
+                android:layout_marginBottom="@dimen/d15"
+                android:text="@string/block"
+                android:textColor="#ff222222"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d15"
+                android:layout_marginRight="@dimen/d20"
+                android:layout_marginBottom="@dimen/d17"
+                android:text="safsdgfsgsdg"
+                android:textColor="#ff666666"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/d15"
+            android:layout_marginRight="@dimen/d15"
+            android:background="#ffeaeaea" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_turn_into_detils">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d21"
+                android:layout_marginTop="@dimen/d15"
+                android:layout_marginBottom="@dimen/d15"
+                android:text="@string/transaction_time"
+                android:textColor="#ff222222"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d15"
+                android:layout_marginRight="@dimen/d20"
+                android:layout_marginBottom="@dimen/d17"
+                android:text="safsdgfsgsdg"
+                android:textColor="#ff666666"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/d15"
+            android:layout_marginRight="@dimen/d15"
+            android:background="#ffeaeaea" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_turn_into_detils">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d21"
+                android:layout_marginTop="@dimen/d15"
+                android:layout_marginBottom="@dimen/d15"
+                android:text="@string/remarks"
+                android:textColor="#ff222222"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d15"
+                android:layout_marginRight="@dimen/d20"
+                android:layout_marginBottom="@dimen/d71"
+                android:text="safsdgfsgsdg"
+                android:textColor="#ff666666"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

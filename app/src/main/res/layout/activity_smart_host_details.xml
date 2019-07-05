@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.my.SmartHostDetailsActivity"
+    android:orientation="vertical"
+    android:background="@mipmap/smart_host_bg">
+
+    <include layout="@layout/title_transparent"
+        android:id="@+id/title_layout"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d276"
+        android:layout_gravity="center_horizontal">
+    <TextView
+        android:id="@+id/tv_host_number_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZBB"
+        android:textColor="#ffffbc00"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/host_number"
+            android:textColor="#ffffbc00"
+            android:textSize="24sp"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_host_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0000"
+        android:textColor="#ff000000"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/d8"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d56"
+        android:layout_gravity="center_horizontal">
+    <TextView
+        android:id="@+id/tv_host_revenue_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZBB"
+        android:textColor="#ffffbc00"
+        android:textSize="24sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/host_revenue"
+            android:textColor="#ffffbc00"
+            android:textSize="24sp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_host_revenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0000"
+        android:textColor="#ff000000"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/d10"/>
+
+</LinearLayout>

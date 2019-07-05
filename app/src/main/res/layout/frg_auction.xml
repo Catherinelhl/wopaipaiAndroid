@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_grey"
+    android:orientation="vertical">
+
+    <cn.wopaipai.view.BaseTabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d48"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/button_color"
+        app:tabIndicatorHeight="@dimen/d2"
+        app:tabIndicatorWidth="@dimen/d16"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/button_color"
+        app:tabTextColor="@color/grey_999999"
+        app:tab_Mode="mode_scrollable" />
+    <!--平台公告，现阶段显示标题即可-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d30"
+        android:layout_margin="@dimen/d12"
+        android:background="@drawable/bg_orange_left_to_right"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_broadcast"
+            style="@style/marquee_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d24"
+            android:layout_marginRight="@dimen/d24"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/notification"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_pink_corner_top">
+
+        <LinearLayout
+            android:id="@+id/rl_auction_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d39"
+            android:layout_marginTop="@dimen/d17"
+            android:layout_marginRight="@dimen/d39"
+            android:minHeight="@dimen/d17"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/d0"
+                android:layout_height="@dimen/d1"
+                android:layout_weight="39" />
+
+            <TextView
+                android:id="@+id/tv_auctioning"
+                style="@style/black_16_text_style"
+                android:drawableLeft="@mipmap/icon_auction_tab_f"
+                android:drawablePadding="@dimen/d10"
+                android:text="@string/auction_in_progress"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="@dimen/d0"
+                android:layout_height="@dimen/d1"
+                android:layout_weight="106" />
+
+            <TextView
+                android:id="@+id/tv_auction_begin_in_a_minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/bg_auction_tab_white_conner"
+                android:drawablePadding="@dimen/d10"
+                android:text="@string/begin_in_a_minute"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14" />
+
+            <View
+                android:layout_width="@dimen/d0"
+                android:layout_height="@dimen/d1"
+                android:layout_weight="39" />
+        </LinearLayout>
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srl_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_auction_tab"
+            android:layout_marginLeft="@dimen/d12"
+            android:layout_marginTop="@dimen/d12"
+            android:layout_marginRight="@dimen/d12">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+</LinearLayout>

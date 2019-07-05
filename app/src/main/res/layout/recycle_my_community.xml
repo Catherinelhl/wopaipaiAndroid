@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/img_community_pic"
+        android:layout_width="@dimen/d32"
+        android:layout_height="@dimen/d32"
+        android:layout_marginTop="@dimen/d10"
+        android:layout_marginBottom="@dimen/d10"
+        android:src="@mipmap/set_photo" />
+
+    <TextView
+        android:id="@+id/tv_community_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/d22"
+        android:layout_marginRight="@dimen/d5"
+        android:text="136****2808"
+        android:textColor="#ff000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_community_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="（普通会员）"
+        android:textColor="#ff000000"
+        android:textSize="15sp" />
+</LinearLayout>

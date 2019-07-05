@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wpp="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_switch_language"
+        style="@style/black_14_text_style"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/d20"
+        android:drawableRight="@mipmap/icon_drop_down"
+        android:drawablePadding="@dimen/d8"
+        android:gravity="center"
+        android:minHeight="@dimen/d24"
+        android:text="@string/Language_switching" />
+
+    <ImageView
+        android:id="@+id/iv_login"
+        android:layout_width="@dimen/d81"
+        android:layout_height="@dimen/d61"
+        android:layout_above="@+id/ll_login_edit"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="@dimen/d32"
+        android:src="@mipmap/icon_login" />
+
+    <LinearLayout
+        android:id="@+id/ll_login_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/d20"
+        android:paddingRight="@dimen/d20">
+
+
+        <cn.wopaipai.view.edittext.LeftMiddleRightEditText
+            android:id="@+id/lmr_et_account"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d48"
+            wpp:rightTextVisible="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d1"
+            android:background="@color/orange_FAAE00" />
+
+
+        <cn.wopaipai.view.edittext.LeftMiddleRightEditText
+            android:id="@+id/lmr_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d48"
+            android:layout_marginTop="@dimen/d14"
+            wpp:isPwd="true"
+            wpp:leftTextVisible="invisible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d1"
+            android:background="@color/orange_FAAE00" />
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/button_style"
+            android:layout_marginTop="@dimen/d30"
+            android:alpha="0.6"
+            android:text="@string/login" />
+
+        <TextView
+            android:id="@+id/tv_switch_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/d15"
+            android:padding="@dimen/d5"
+            android:text="@string/login_by_email"
+            android:textColor="@color/black_666666"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/d24">
+
+        <TextView
+            android:id="@+id/tv_register_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/v_line"
+            android:padding="@dimen/d10"
+            android:text="@string/register_account"
+            android:textColor="@color/black_666666"
+            android:textSize="@dimen/text_size_18" />
+
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="@dimen/d1"
+            android:layout_height="@dimen/d18"
+            android:layout_centerInParent="true"
+            android:background="@color/black_666666" />
+
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/v_line"
+            android:padding="@dimen/d10"
+            android:text="@string/forgot_password"
+            android:textColor="@color/black_666666"
+            android:textSize="@dimen/text_size_18" />
+    </RelativeLayout>
+
+</RelativeLayout>

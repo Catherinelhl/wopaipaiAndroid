@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_auction_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white"
+    android:padding="@dimen/d11">
+
+    <ImageView
+        android:id="@+id/iv_auction_acquisition_cover"
+        android:layout_width="@dimen/d70"
+        android:layout_height="@dimen/d70"
+        android:scaleType="centerCrop"
+        android:background="@color/theme_grey" />
+
+    <LinearLayout
+        android:id="@+id/ll_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d10"
+        android:layout_toRightOf="@+id/iv_auction_acquisition_cover"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_auction_commodity_name"
+            style="@style/black_14_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:minHeight="@dimen/d14"
+            tools:text="海尔洗衣机海尔洗衣机海尔洗…" />
+
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/d12"
+            android:layout_marginTop="@dimen/d16"
+            tools:text="竞拍价  1050  ZBB  获得"
+            android:textColor="@color/black_222222"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/d12"
+            tools:text="2019/01/01"
+            android:layout_marginTop="@dimen/d2"
+            android:textColor="@color/grey_999999"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d0.5"
+        android:layout_marginTop="@dimen/d10"
+        android:layout_below="@+id/iv_auction_acquisition_cover"
+        android:background="@color/grey_E2E2E4" />
+
+    <TextView
+        android:id="@+id/tv_apply_auction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d22"
+        android:layout_below="@+id/iv_auction_acquisition_cover"
+        android:layout_toLeftOf="@+id/tv_switch"
+        android:minHeight="@dimen/d14"
+        android:text="@string/apply_auction"
+        android:visibility="gone"
+        android:textColor="@color/red_ff0000"
+        android:paddingLeft="@dimen/d8"
+        android:textSize="@dimen/text_size_12" />
+
+    <TextView
+        android:id="@+id/tv_switch"
+        android:layout_width="wrap_content"
+        android:paddingLeft="@dimen/d8"
+        android:layout_marginTop="@dimen/d22"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_auction_acquisition_cover"
+        android:layout_toLeftOf="@+id/tv_get"
+        android:minHeight="@dimen/d14"
+        android:visibility="gone"
+        android:text="@string/replacement"
+        android:textColor="@color/red_ff0000"
+        android:textSize="@dimen/text_size_12" />
+
+    <TextView
+        android:id="@+id/tv_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_auction_acquisition_cover"
+        android:layout_alignParentRight="true"
+        android:minHeight="@dimen/d14"
+        android:layout_marginTop="@dimen/d22"
+        android:paddingLeft="@dimen/d8"
+        android:layout_marginLeft="@dimen/d16"
+        android:text="@string/receive"
+        android:textColor="@color/red_ff0000"
+        android:textSize="@dimen/text_size_12" />
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_header" />
+
+    <FrameLayout
+        android:id="@+id/home_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d0"
+        android:layout_weight="1"
+        android:background="@color/theme_grey"
+        tools:ignore="MissingConstraints" />
+
+    <View style="@style/small_line_style" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/bottom_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d48"
+        android:background="@color/white"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="@dimen/d0"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/red_F5515F"
+        app:tabTextColor="@color/black30_222222">
+
+    </android.support.design.widget.TabLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_header"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d48"
+    android:background="@color/white">
+
+    <ImageButton
+        android:id="@+id/ib_back"
+        android:layout_width="@dimen/d48"
+        android:layout_height="@dimen/d48"
+        android:background="@color/transparent"
+        android:paddingLeft="@dimen/d10"
+        android:paddingRight="@dimen/d10"
+        android:src="@mipmap/icon_back"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/d10"
+        android:layout_toRightOf="@+id/ib_back"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_size_12"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/black_16_text_style"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:padding="@dimen/d5" />
+
+    <ImageButton
+        android:id="@+id/ib_right"
+        android:layout_width="@dimen/d48"
+        android:layout_height="@dimen/d48"
+        android:layout_alignParentRight="true"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/d20"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/text_size_12"
+        android:visibility="gone" />
+
+    <View
+        style="@style/small_line_style"
+        android:id="@+id/v_title_line"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

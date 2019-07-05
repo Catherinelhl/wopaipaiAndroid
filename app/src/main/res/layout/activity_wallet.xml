@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.my.WalletActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d200"
+        android:background="@mipmap/wallet_bg">
+
+        <include layout="@layout/title_transparent"
+            android:id="@+id/ly_wallet_title"/>
+        <RelativeLayout
+            android:id="@+id/rl_money_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ly_wallet_title"
+            android:layout_marginTop="@dimen/d42">
+        <ImageView
+            android:id="@+id/img_money_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d26"
+            android:background="@mipmap/total_money"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_money"
+            android:textColor="#fffff4f3"
+            android:textSize="17dp"
+            android:layout_toRightOf="@id/img_money_bg"
+            android:layout_marginLeft="@dimen/d11"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_total_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"
+            android:textSize="24sp"
+            android:layout_below="@id/rl_money_title"
+            android:layout_marginTop="@dimen/d20"
+            android:layout_marginLeft="@dimen/d26"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcl_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

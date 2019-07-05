@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/d299"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/d20"
+    android:layout_marginTop="@dimen/d20"
+    android:layout_marginRight="@dimen/d20">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/bold_black_18_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/d16"
+        android:gravity="center"
+        android:text="@string/sure_to_enter_in" />
+
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/d16"
+        android:layout_marginTop="@dimen/d32"
+        android:layout_marginRight="@dimen/d16"
+        android:gravity="center"
+        android:text="进入此产品的竞拍，将暂时冻结您 1000 ZBB的资产，退出竞拍将返回至您的账户中。"
+        android:textColor="@color/black_222222"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/tv_account_balance_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_content"
+        android:layout_marginTop="@dimen/d28"
+        android:layout_marginLeft="@dimen/d16"
+        android:layout_toLeftOf="@+id/tv_account_balance"
+        android:minWidth="@dimen/d14"
+        android:text="@string/current_account_balance_str"
+        android:textColor="@color/black_222222"
+        android:textSize="@dimen/text_size_14"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_account_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/d28"
+        android:paddingRight="@dimen/d18"
+        android:minWidth="@dimen/d14"
+        android:text="1001 ZBB"
+        android:textColor="@color/orange_FAAE00"
+        android:textSize="@dimen/text_size_14"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_trade_password"
+        style="@style/black_14_edit_text_style"
+        android:layout_below="@+id/tv_account_balance"
+        android:layout_marginLeft="@dimen/d18"
+        android:layout_marginTop="@dimen/d12"
+        android:layout_marginRight="@dimen/d18"
+        android:background="@color/transparent"
+        android:digits="@string/password_rule"
+        android:hint="@string/trade_password"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:minHeight="@dimen/d32"
+        android:textColor="@color/black70"
+        android:paddingRight="@dimen/d40"
+        android:singleLine="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d0.5"
+        android:layout_below="@+id/et_trade_password"
+        android:layout_marginLeft="@dimen/d16"
+        android:layout_marginRight="@dimen/d16"
+        android:background="@color/grey_CCCCCC" />
+
+    <View
+        android:id="@+id/v_split"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d0.5"
+        android:layout_below="@+id/et_trade_password"
+        android:layout_marginTop="@dimen/d36"
+        android:background="@color/grey_CCCCCC" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d48"
+        android:layout_below="@+id/v_split"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="@dimen/d0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/black50_1d2124"
+            android:textSize="@dimen/text_size_16" />
+
+        <View
+            style="@style/line_style"
+            android:layout_width="@dimen/d1"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="@dimen/d0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textAllCaps="false"
+            android:textColor="@color/red_F5515F"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+
+</RelativeLayout>

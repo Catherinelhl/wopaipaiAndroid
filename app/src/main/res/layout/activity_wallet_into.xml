@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.my.WalletIntoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/title" />
+
+        <ImageView
+            android:id="@+id/img_ercode"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="55dp" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/d26"
+            android:text="9J8SRTLS2DGFAMQ729N568B88GQLSP8M"
+            android:textColor="#ff222222"
+            android:textSize="12sp"
+            android:layout_marginBottom="@dimen/d10"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_copy_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d40"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/d80"
+        android:layout_marginLeft="@dimen/d43"
+        android:layout_marginRight="@dimen/d43"
+        android:textColor="@color/white"
+        android:text="@string/copy_view_key"
+        android:textSize="@dimen/d14"
+        android:background="@drawable/btn_copy_address"
+        style="?borderlessButtonStyle"/>
+
+    <Button
+        android:id="@+id/btn_set_pic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d40"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/d30"
+        android:layout_marginLeft="@dimen/d43"
+        android:layout_marginRight="@dimen/d43"
+        android:textColor="@color/white"
+        android:text="@string/save_picture"
+        android:textSize="@dimen/d14"
+        android:background="@drawable/btn_set_picture"
+        style="?borderlessButtonStyle"/>
+
+</RelativeLayout>

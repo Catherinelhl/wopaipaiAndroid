@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- android:radius 弧形的半径 -->
+    <corners android:radius="@dimen/d2" />
+    <!-- padding：Button里面的文字与Button边界的间隔 -->
+    <padding
+        android:bottom="@dimen/d2"
+        android:left="@dimen/d0"
+        android:right="@dimen/d10"
+        android:top="@dimen/d2" />
+    <!-- 边框的宽度和颜色颜色 -->
+    <stroke
+        android:width="@dimen/d0.2"
+        android:color="@color/white" />
+
+    <!-- 背景色 -->
+    <solid android:color="@color/white"></solid>
+</shape>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_add_contact"
+    android:layout_height="match_parent"
+    tools:context=".ui.my.AddContactActivity">
+
+    <include layout="@layout/title"
+        android:id="@+id/title_layout"/>
+
+    <LinearLayout
+        android:id="@+id/lly_address_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d15"
+        android:layout_marginLeft="@dimen/d15"
+        android:layout_marginRight="@dimen/d15"
+        android:layout_marginBottom="@dimen/d30"
+        android:layout_below="@id/title_layout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/d20"
+                android:layout_marginTop="@dimen/d15"
+                android:layout_marginBottom="@dimen/d15"
+                android:text="@string/name"
+                android:textColor="#ff222222"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d39"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/d20"
+                android:layout_marginLeft="@dimen/d50"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/input_name_please"
+                android:textSize="@dimen/text_size_12"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d1"
+            android:background="#ffeaeaea"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wallet_address"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ff222222"
+                android:textSize="14sp"
+                android:layout_marginTop="@dimen/d15"
+                android:layout_marginBottom="@dimen/d15"
+                android:layout_marginLeft="@dimen/d20"/>
+
+            <EditText
+                android:id="@+id/et_wallet_address"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/d25"
+                android:background="@null"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:hint="@string/input_wallet_address_please"
+                android:maxEms="10"
+                android:textSize="@dimen/text_size_12" />
+            <View
+                android:layout_width="@dimen/d0"
+                android:layout_height="@dimen/d0"
+                android:layout_weight="1"/>
+            <ImageButton
+                android:id="@+id/add_address_sao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/saomiao"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/d15"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d1"
+            android:background="#ffeaeaea"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/currency"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ff222222"
+                android:textSize="14sp"
+                android:layout_marginTop="@dimen/d15"
+                android:layout_marginBottom="@dimen/d15"
+                android:layout_marginLeft="@dimen/d20"/>
+
+            <TextView
+                android:id="@+id/tv_coin_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d39"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/d50"
+                android:padding="@dimen/d10"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_size_12"
+                android:layout_marginRight="@dimen/d20"
+                android:drawableRight="@mipmap/choose"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d1"
+            android:background="#ffeaeaea"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_address_config"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d40"
+        android:layout_below="@id/lly_address_msg"
+        android:layout_marginLeft="@dimen/d15"
+        android:layout_marginRight="@dimen/d15"
+        android:background="@drawable/btn_set_picture"
+        android:text="@string/confirm"
+        android:textColor="#fff3f3f3"/>
+
+</RelativeLayout>

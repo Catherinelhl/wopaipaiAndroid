@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d55"
+            android:layout_marginTop="@dimen/d26"
+            android:background="@mipmap/mycomm" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d40"
+            android:layout_marginTop="@dimen/d51"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/community_person"
+                android:textColor="#ffffbc00"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/tv_total_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/d9"
+                android:gravity="center"
+                tools:text="12"
+                android:textColor="#ffffbc00"
+                android:textSize="40sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d17"
+        android:layout_marginRight="@dimen/d16"
+        android:background="@mipmap/community_line" />
+
+    <TextView
+        android:id="@+id/tv_recommend_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d20"
+        android:layout_marginTop="@dimen/d9"
+        android:text="推荐用户(5)"
+        android:textColor="#ff999999"
+        android:textSize="12sp" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/d20">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcl_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--密码框/验证码输入-->
+    <declare-styleable name="editViewLeftMiddleRight">
+        <attr name="hint" format="string" />
+        <attr name="isPwd" format="boolean" />
+        <attr name="behaviour">
+            <enum name="normal" value="0" />
+            <enum name="text" value="2" />
+            <enum name="image" value="3" />
+            <enum name="phone" value="5" />
+            <enum name="amount" value="7" />
+        </attr>
+        <attr name="hintColor" format="integer" />
+        <attr name="textColor" format="integer" />
+        <attr name="textSize" format="float" />
+        <attr name="rightTextVisible">
+            <enum name="visible" value="0" />
+            <enum name="gone" value="1" />
+            <enum name="invisible" value="2" />
+        </attr>
+        <attr name="leftTextVisible">
+            <enum name="visible" value="0" />
+            <enum name="gone" value="1" />
+            <enum name="invisible" value="2" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="BaseTabLayout">
+        <attr name="tab_Mode" format="enum">
+            <enum name="mode_fixed" value="1" />
+            <enum name="mode_scrollable" value="2" />
+        </attr>
+        <attr name="tabIndicatorColor" format="color" />
+        <attr name="tabSelectTextColor" format="color" />
+        <attr name="tabTextColor" format="color" />
+        <attr name="tabIndicatorHeight" format="dimension" />
+        <attr name="tabIndicatorWidth" format="dimension" />
+        <attr name="tabTextSize" format="dimension" />
+        <attr name="fixThree" format="boolean" />
+    </declare-styleable>
+    <!--文字追加-->
+    <declare-styleable name="subStringStyle">
+        <attr name="normal_content" format="string" />
+        <attr name="action_text" format="string" />
+        <attr name="content_color" format="integer" />
+        <attr name="action_color" format="integer" />
+        <attr name="text_size" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="leftMiddleRightLayoutStyle">
+        <attr name="leftContent" format="string" />
+        <attr name="middleContent" format="string" />
+        <attr name="rightContent" format="string" />
+        <attr name="left_text_color" format="integer" />
+        <attr name="middle_text_color" format="integer" />
+        <attr name="right_text_color" format="integer" />
+        <attr name="left_text_size" format="float" />
+        <attr name="middle_text_size" format="float" />
+        <attr name="right_text_size" format="float" />
+    </declare-styleable>
+</resources>

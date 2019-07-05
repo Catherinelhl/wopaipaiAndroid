@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.my.RevenueRewardActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d124"
+            android:background="@color/orange_FFBC00" />
+
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/title_transparent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_layout"
+            android:layout_margin="@dimen/d19"
+            android:background="@drawable/selector_bg_flowlayout"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/d0"
+                android:layout_height="@dimen/d1"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/lly_total_revenue"
+                android:layout_width="@dimen/d0"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/d25"
+                    android:background="@mipmap/total_revenue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/d7"
+                    android:maxLines="2"
+                    android:minHeight="@dimen/d24"
+                    android:text="@string/total_revenue"
+                    android:textColor="#ff999999"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_total_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/d3"
+                    android:layout_marginBottom="@dimen/d25"
+                    android:text="0.000000"
+                    android:textColor="#ff222222"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/d0"
+                android:layout_height="@dimen/d1"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="@dimen/d0"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/d24"
+                    android:background="@mipmap/rate_of_return" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/d7"
+                    android:maxLines="2"
+                    android:minHeight="@dimen/d24"
+                    android:text="@string/rate_of_revenue"
+                    android:textColor="#ff999999"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_total_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/d3"
+                    android:layout_marginBottom="@dimen/d25"
+                    android:text="0.005%"
+                    android:textColor="#ff222222"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/d0"
+                android:layout_height="@dimen/d1"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--托管-->
+    <RelativeLayout
+        android:id="@+id/rl_trusteeship"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d53"
+        android:layout_marginTop="@dimen/d18">
+
+        <ImageView
+            android:id="@+id/iv_trusteeship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginBottom="@dimen/d15"
+            android:src="@mipmap/today_tg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/d12"
+            android:layout_toLeftOf="@+id/tv_total_today_trusteeship_income"
+            android:layout_toRightOf="@id/iv_trusteeship"
+            android:text="@string/today_trusteeship_income"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_total_today_trusteeship_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="19dp"
+            android:text="0.0000"
+            android:textColor="#fffaae00"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray20_line" />
+    <!--推荐加价-->
+    <RelativeLayout
+        android:id="@+id/rl_inviate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d53">
+
+        <ImageView
+            android:id="@+id/iv_inviate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginBottom="@dimen/d15"
+            android:src="@mipmap/today_add_revenue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/d12"
+            android:layout_toLeftOf="@+id/tv_total_today_invaite_income"
+            android:layout_toRightOf="@id/iv_inviate"
+            android:text="@string/today_invite_income"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_total_today_invaite_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="19dp"
+            android:text="0.0000"
+            android:textColor="#fffaae00"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray20_line" />
+    <!--社群奖励-->
+    <RelativeLayout
+        android:id="@+id/rl_community"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d53">
+
+        <ImageView
+            android:id="@+id/iv_community"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginBottom="@dimen/d15"
+            android:src="@mipmap/today_community_add" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/d12"
+            android:layout_toLeftOf="@+id/tv_total_today_community_income"
+            android:layout_toRightOf="@id/iv_community"
+            android:text="@string/today_community"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_total_today_community_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="19dp"
+            android:text="0.0000"
+            android:textColor="#fffaae00"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray20_line" />
+    <!--管理佣金-->
+    <RelativeLayout
+        android:id="@+id/rl_senior_executive"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d53">
+
+        <ImageView
+            android:id="@+id/iv_senior_executive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginBottom="@dimen/d15"
+            android:src="@mipmap/today_adminstor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/d12"
+            android:layout_toLeftOf="@+id/tv_total_today_senior_executive_income"
+            android:layout_toRightOf="@id/iv_senior_executive"
+            android:text="@string/today_senior_executive"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_total_today_senior_executive_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="19dp"
+            android:text="0.0000"
+            android:textColor="#fffaae00"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray20_line" />
+    <!--培育佣金-->
+    <RelativeLayout
+        android:id="@+id/rl_senior_peiyu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d53">
+
+        <ImageView
+            android:id="@+id/iv_senior_peiyu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginBottom="@dimen/d15"
+            android:src="@mipmap/today_cultivation" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/d12"
+            android:layout_toLeftOf="@+id/tv_total_today_senior_peiyu_income"
+            android:layout_toRightOf="@id/iv_senior_peiyu"
+            android:text="@string/today_cultivating_executive"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_total_today_senior_peiyu_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="19dp"
+            android:text="0.0000"
+            android:textColor="#fffaae00"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray20_line" />
+</LinearLayout>

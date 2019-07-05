@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/d299"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/d20"
+    android:layout_marginTop="@dimen/d20"
+    android:layout_marginRight="@dimen/d20">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/bold_black_18_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/d16"
+        android:gravity="center"
+        android:text="@string/bidding_increase" />
+
+
+    <TextView
+        android:id="@+id/tv_rule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="@dimen/d16"
+        android:layout_marginTop="@dimen/d20"
+        android:layout_marginRight="@dimen/d16"
+        android:text="@string/auction_price_rules"
+        android:textColor="@color/black_222222"
+        android:textSize="@dimen/text_size_14" />
+
+    <RelativeLayout
+        android:id="@+id/rl_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_rule"
+        android:layout_marginLeft="@dimen/d16"
+        android:layout_marginTop="@dimen/d30"
+        android:layout_marginRight="@dimen/d16">
+
+        <TextView
+            android:id="@+id/tv_increase_amount_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginRight="@dimen/d2"
+            android:gravity="center"
+            android:text="@string/lowest_price_rules"
+            android:textColor="@color/black_222222"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_lowest_increase_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="@dimen/d16"
+            android:layout_toRightOf="@+id/tv_increase_amount_str"
+            android:textColor="@color/orange_FFBC00"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold"
+            tools:text=" 10 ZBB" />
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/et_trade_password"
+        style="@style/black_14_edit_text_style"
+        android:layout_below="@+id/rl_amount"
+        android:layout_marginLeft="@dimen/d18"
+        android:layout_marginRight="@dimen/d18"
+        android:background="@color/transparent"
+        android:digits="@string/password_rule"
+        android:hint="@string/trade_password"
+        android:textColor="@color/black70"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:minHeight="@dimen/d32"
+        android:paddingRight="@dimen/d40"
+        android:singleLine="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d0.5"
+        android:layout_below="@+id/et_trade_password"
+        android:layout_marginLeft="@dimen/d16"
+        android:layout_marginRight="@dimen/d16"
+        android:background="@color/grey_CCCCCC" />
+
+    <View
+        android:id="@+id/v_split"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:layout_below="@+id/et_trade_password"
+        android:layout_marginTop="@dimen/d26"
+        android:background="@color/grey_CCCCCC" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d48"
+        android:layout_below="@+id/v_split"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="@dimen/d0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/black50_1d2124"
+            android:textSize="@dimen/text_size_16" />
+
+        <View
+            style="@style/line_style"
+            android:layout_width="@dimen/d1"
+            android:layout_height="match_parent"
+            android:background="@color/grey_CCCCCC" />
+
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="@dimen/d0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textAllCaps="false"
+            android:textColor="@color/red_F5515F"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+
+</RelativeLayout>

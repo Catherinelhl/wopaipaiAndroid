@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/selector_bg_flowlayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消智能托管"
+        android:textColor="#ff222222"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/d24"/>
+
+    <EditText
+        android:id="@+id/et_dialog_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d50"
+        android:layout_marginLeft="@dimen/d16"
+        android:layout_marginRight="@dimen/d16"
+        android:layout_marginTop="@dimen/d32"
+        android:hint="@string/transaction_password_please"
+        android:background="@null"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:background="@color/gray_line"
+        android:layout_marginLeft="@dimen/d16"
+        android:layout_marginRight="@dimen/d16"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d45"
+        android:layout_marginLeft="@dimen/d16"
+        android:layout_marginRight="@dimen/d16">
+        <Button
+            android:id="@+id/btn_dialog_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d50"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textColor="#ff666666"
+            android:textSize="16sp"
+            android:background="@null"/>
+        <View
+            android:layout_width="@dimen/d1"
+            android:layout_height="50dp"
+            android:background="@color/gray_line"/>
+        <Button
+            android:id="@+id/btn_dialog_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d50"
+            android:layout_weight="1"
+            android:text="@string/confirm"
+            android:textColor="#fff5515f"
+            android:textSize="16sp"
+            android:background="@null"/>
+    </LinearLayout>
+
+</LinearLayout>

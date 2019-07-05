@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/d48"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_params_name"
+            android:layout_width="@dimen/d0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:paddingLeft="@dimen/d12"
+            android:layout_weight="94"
+            android:layout_marginTop="@dimen/d16"
+            android:layout_marginBottom="@dimen/d16"
+            android:gravity="left|center_vertical"
+            android:text="@string/choice"
+            android:paddingRight="@dimen/d12"
+            android:textColor="@color/grey_999999"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_params_info"
+            android:layout_width="@dimen/d0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_weight="309"
+            android:gravity="left|center_vertical"
+            android:text="@string/please_select_specifications"
+            android:textColor="@color/black_222222"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <View style="@style/small_line_style" />
+</LinearLayout>
