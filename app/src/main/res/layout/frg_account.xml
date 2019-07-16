@@ -422,7 +422,7 @@
                     android:layout_marginTop="@dimen/d16"
                     android:layout_marginBottom="@dimen/d16"
                     android:text="@string/contact_customer_service"
-                    android:textColor="#222222"
+                    android:textColor="@color/black_222222"
                     android:textSize="16dp" />
 
                 <View
@@ -437,6 +437,7 @@
                     android:layout_marginRight="@dimen/d12"
                     android:background="@mipmap/set_common_next" />
             </LinearLayout>
+
             <TextView
                 android:id="@+id/tv_version"
                 android:layout_width="wrap_content"
@@ -444,8 +445,7 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="@dimen/d15"
                 android:textColor="@color/grey_999999"
-                android:textSize="@dimen/text_size_10"
-                android:visibility="visible" />
+                android:textSize="@dimen/text_size_10" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

@@ -277,5 +277,9 @@
     <string name="email_optional">E-mail(optional)</string>
     <string name="please_input_six_length_trade_password">Please enter a six digit transaction password</string>
     <string name="password_reset_success">Password reset succeeded</string>
+    <string name="login_information_has_expired">Login information has expired</string>
+    <string name="please_perfect_user_nickname_or_avatar">Please perfect user nickname or avatar</string>
+    <string name="currently_the_latest_version">Currently the latest version</string>
+    <string name="required_an_upgrade_app">This feature requires an upgrade to the app.</string>
 
 </resources>

@@ -59,7 +59,7 @@ android {
         release {
             buildConfigField "boolean", "LogTool", "false" //不显示Log
             buildConfigField "boolean", "LazyMode", "false" // 是否懒人模式
-            buildConfigField "boolean", "Version", "false" // 是否显示版本信息
+            buildConfigField "boolean", "Version", "true" // 是否显示版本信息
             buildConfigField "boolean", "NoCode", "true" // 是否显示验证码信息
 
             debuggable false

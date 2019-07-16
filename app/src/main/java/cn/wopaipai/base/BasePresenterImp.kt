@@ -181,6 +181,22 @@ open class BasePresenterImp : BaseContract.Presenter {
                 //钱包参数错误
                 getString(R.string.wrong_wallet_params)
             }
+            MessageConstants.C1050 -> {
+                ///此功能需要升级APP
+                getString(R.string.required_an_upgrade_app)
+            }
+            MessageConstants.C1051 -> {
+                //当前已是最新版
+                getString(R.string.currently_the_latest_version)
+            }
+            MessageConstants.C1052 -> {
+                //请完善用户昵称或头像
+                getString(R.string.please_perfect_user_nickname_or_avatar)
+            }
+            MessageConstants.C1055 -> {
+                //登录信息已过期
+                getString(R.string.login_information_has_expired)
+            }
 
             MessageConstants.C9999 -> {
                 //系统

@@ -13,6 +13,7 @@ import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
 import android.view.View
 import cn.wopaipai.BaseDialog
+import cn.wopaipai.BuildConfig
 import cn.wopaipai.R
 import cn.wopaipai.base.BaseApplication
 import cn.wopaipai.base.BaseFrg
@@ -21,6 +22,7 @@ import cn.wopaipai.constant.Constants
 import cn.wopaipai.manager.intentToActivity
 import cn.wopaipai.manager.showToast
 import cn.wopaipai.tool.StringTool
+import cn.wopaipai.tool.VersionTool
 import cn.wopaipai.ui.activity.*
 import cn.wopaipai.ui.contract.AccountContract
 import cn.wopaipai.ui.my.RevenueRewardActivity
@@ -55,13 +57,15 @@ class AccountFrg : BaseFrg(), AccountContract.View {
     override fun initViews(view: View) {
         getProfile()
         // 如果当前是debug版本，显示当前的版本信息
-        /*if (BuildConfig.Version) {
-            tv_version.visibility = View.VISIBLE
-            tv_version.text =
-                "Version:" + VersionTool.getVersionName(context!!) + "(" + VersionTool.getVersionCode(
+        val sb = StringBuffer("Version:" + VersionTool.getVersionName(context!!))
+        if (BuildConfig.Version) {
+            sb.append(
+                "(" + VersionTool.getVersionCode(
                     context!!
                 ) + ")"
-        }*/
+            )
+        }
+        tv_version.text = sb
 
     }
 

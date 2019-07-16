@@ -101,31 +101,30 @@ object MessageConstants {
     const val C1035 = 1035
     ///  系统
     const val C9999 = 9999
-
     /// 押金必须大于等于起拍价
     const val C1026 = 1026
-
     /// 输入的币种不支持
     const val C1040 = 1040
-
     /// 输出的币种不支持
     const val C1041 = 1041
-
     /// 兑换失败
     const val C1045 = 1045
-
     ///邮箱已存在
     const val C1019 = 1019
-
     ///外部转出失败
     const val C1042 = 1042
-
     /// 内部转出失败
     const val C1043 = 1043
-
-
     ///钱包参数错误
     const val C1046 = 1046
+    ///此功能需要升级APP
+    const val C1050 = 1050
+    ///当前已是最新版
+    const val C1051 = 10501
+    ///请完善用户昵称或头像
+    const val C1052 = 1052
+    ///登录信息已过期
+    const val C1055 = 1055
 
 
     //    /// <summary>

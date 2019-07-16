@@ -277,4 +277,8 @@
     <string name="email_optional">邮箱(选填)</string>
     <string name="please_input_six_length_trade_password">请输入六位数字交易密码</string>
     <string name="password_reset_success">密码重置成功</string>
+    <string name="login_information_has_expired">登录信息已过期</string>
+    <string name="please_perfect_user_nickname_or_avatar">请完善用户昵称或头像</string>
+    <string name="currently_the_latest_version">当前已是最新版</string>
+    <string name="required_an_upgrade_app">此功能需要升级APP</string>
 </resources>
